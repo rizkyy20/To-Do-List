@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Indie+Flower&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap');
+
+
+*, html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #6EACDA;
+    background: linear-gradient(90deg, #B692C2 0%, #6EACDA);
+}
+
+:root {
+    --txt-font: "Indie Flower", cursive;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--txt-font);
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 3em;
+}
+
+
+.wrap {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    box-shadow: 2px 2px 2px 4px rgb(0, 0, 0, 0.5);
+    gap:30px
+}
+
+
+.tes {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 15px;
+    /* border: 2px solid black; */
+}
+
+.wrap2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+.paralax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    height: 80vh;
+}
+
+.my-checkbox {
+    margin-left: 10px;
+    width: 15px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media  screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .paralax {
+        font-size: 16px;
+    }
+    .wrap2 {
+        align-items: center;
+    }
+    .wrap {
+        align-items: center;
+    }
+    .tes {
+        width: 200px;
+        padding-left: 40px;
+    }
+}
+
+
+/* tablet */
+ 
+@media screen and (min-width: 601px) and (max-width: 900px){
+    .container {
+        width: 80%;
+    }
+    .paralax {
+        font-size: 15px;
+    }
+    .wrap {
+        align-items: center;
+    }
+    .wrap2 {
+        align-items: center;
+    }
+}
+
+
